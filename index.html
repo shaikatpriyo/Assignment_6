@@ -21,7 +21,49 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-<body>
+<body class="bg-[#CFF0ED]" style="font-family: 'Inter', sans-serif">
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav
+        class="navbar bg-green-700 flex flex-col md:flex-row gap-4 justify-between items-center max-w-1144px mx-auto px-20 py-4"
+      >
+        <div class="text-xl text-white font-bold">Green Earth</div>
+        <div class="flex gap-4 text-white flex-col md:flex-row text-center">
+          <a href="#about" class="decoration-none">About</a>
+          <a href="#gallery" class="decoration-none">Gallery</a>
+          <a href="#plant-a-tree" class="decoration-none">Plant a Tree</a>
+        </div>
+        <div>
+          <a href="#plant-a-tree"><button class="btn btn-warning rounded-3xl">
+            <span class="text-green-900">Plant a Tree</span>
+          </button></a>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div
+        class="banner bg-green-200 md:h-80 w-full text-center items-center"
+        style="
+          background-image: url('./assets/hero-leaf1.png'),
+            url('./assets/hero-leaf2.png');
+          background-position: left, right;
+          background-repeat: no-repeat;
+          background-size: auto 100%;
+        "
+      >
+        <div class="max-w-1144px mx-auto md:px-20 md:py-20 py-10 text-white">
+          <h1 class="md:text-5xl text-2xl font-bold mb-6 text-black">
+            Plant a Tree, Grow a Future
+          </h1>
+          <p class="md:text-md text-sm text-gray-900 mb-8 text-black">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <a href="#plant-a-tree"><button class="btn btn-warning rounded-3xl">
+            <span class="text-green-900">Get Involved</span>
+          </button></a>
+        </div>
+      </div>
   
 </body>
 </html>
